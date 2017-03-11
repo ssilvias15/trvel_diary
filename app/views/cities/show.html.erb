@@ -4,10 +4,12 @@
 
 <div class="content-grid">
 <% @reviews.each do |review| %>
-<div class="content-block">
-<div class="content-image"><%= image_tag review.picture.url (:medium) %></div>
-<div class="content-title"><%= review.title %></div>
+<%= link_to city_path(city) do %>
+    <div class="content-block">
+    <div class="content-image"><%= image_tag review.picture.url (:medium) %></div>
+    <div class="content-title"><%= review.title %></div>
 </div>
+  <% end %>
 <% end %>
 </div>
 
