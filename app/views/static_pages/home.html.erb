@@ -1,0 +1,8 @@
+<div class="content-grid">
+<% @cities.each do |city| %>
+<div class="content-block">
+<div class="content-image"><%= image_tag city.picture.url (:medium) %></div>
+<div class="content-title"><%= city.name %></div>
+</div>
+<% end %>
+</div>
