@@ -13,6 +13,8 @@
 
   <p>City: <%= f.collection_select :city_id, City.all, :id, :name %></p>
   <p>Title: <%= f.text_field :title %></p>
+<p>Picture: <%= f.file_field :picture %></p>
+<p>Picture: <%= f.file_field :picture %></p>
   <p><%= f.text_area :body, size: "70x20" %></p>
 
   <div class="actions">
